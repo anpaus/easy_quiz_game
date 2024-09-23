@@ -23,8 +23,8 @@ class GameplayProvider with ChangeNotifier {
   int diamonds = 0;
 
   GameplayProvider()
-      : coins = Prefs.instance.getCoins(),
-        diamonds = Prefs.instance.getDiamonds();
+      : coins = 0, //Prefs.instance.getCoins(),
+        diamonds = 0, //Prefs.instance.getDiamonds();
 
   void getQuizCategories(List<QuizCategory> categories) {
     categories.shuffle();
